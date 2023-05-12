@@ -9,7 +9,8 @@ public class HelloController {
 	@GetMapping("/hello")
 	public String index() {
         // just a comment to check it bla
-		return "Greetings from Rocket!";
+		throw new RuntimeException("Test");
+		//return "Greetings from Rocket!";
 	}
 	
 	// --> Übung 2 
